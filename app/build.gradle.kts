@@ -2,14 +2,15 @@ plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.kotlin.compose)
+    alias(libs.plugins.ksp)
 }
 
 android {
-    namespace = "com.example.app_base_store_onion"
+    namespace = "com.example.demo_store_mvvm"
     compileSdk = 36
 
     defaultConfig {
-        applicationId = "com.example.app_base_store_onion"
+        applicationId = "com.example.demo_store_mvvm"
         minSdk = 26
         targetSdk = 36
         versionCode = 1
@@ -56,4 +57,14 @@ dependencies {
     androidTestImplementation(libs.androidx.compose.ui.test.junit4)
     debugImplementation(libs.androidx.compose.ui.tooling)
     debugImplementation(libs.androidx.compose.ui.test.manifest)
+
+    implementation(libs.androidx.room.runtime)
+    implementation(libs.androidx.room.ktx)
+    ksp(libs.androidx.room.compiler)
+
+    implementation(libs.androidx.navigation.compose)
+    implementation(libs.androidx.documentfile)
+
+    implementation(libs.apache.poi)
+    implementation(libs.apache.poi.ooxml)
 }

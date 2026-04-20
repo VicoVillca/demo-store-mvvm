@@ -1,4 +1,4 @@
-package com.example.app_base_store_onion
+package com.example.demo_store_mvvm
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4
@@ -19,6 +19,6 @@ class ExampleInstrumentedTest {
     fun useAppContext() {
         // Context of the app under test.
         val appContext = InstrumentationRegistry.getInstrumentation().targetContext
-        assertEquals("com.example.app_base_store_onion", appContext.packageName)
+        assertEquals("com.example.demo_store_mvvm", appContext.packageName)
     }
 }

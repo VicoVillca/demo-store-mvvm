@@ -1,4 +1,4 @@
-package com.example.app_base_store_onion
+package com.example.demo_store_mvvm
 
 import org.junit.Test
 

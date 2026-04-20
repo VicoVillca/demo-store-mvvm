@@ -1,4 +1,4 @@
-package com.example.app_base_store_onion.ui.theme
+package com.example.demo_store_mvvm.ui.theme
 
 import android.app.Activity
 import android.os.Build
